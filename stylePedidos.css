@@ -1,0 +1,27 @@
+#content {
+    width: 1200px;
+    margin: auto;
+}
+#content article {
+    font-size: 1.3rem;
+    height: 400px;
+    background-color: rgb(29, 29, 29);
+    margin: 1rem 0 1rem 0;
+    color: white;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+#content h2 {
+    margin: 0;
+    text-align: center;
+}
+#content div {
+    width: 140px;
+    margin: auto;
+}
+#content img{
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}

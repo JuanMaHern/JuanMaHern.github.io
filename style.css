@@ -1,0 +1,118 @@
+body {
+   /*  background-color: rgb(0, 0, 0); */
+    background-image: url("Img/Backgound.jpg"); 
+}
+
+#top {
+    height: 100px;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    background-image: url("Img/firebackground.png");
+    background-position: center;
+}
+
+.button {
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.button a {
+    background-color: rgb(22, 22, 22);
+    color: wheat;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+.button a:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+.menufloat {
+    height: 140px;
+    width: 50px;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    background-color: rgb(29, 29, 29);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 40px 100px;
+    position: fixed;
+    margin-top: 25%;
+    /* visibility: hidden; */
+}
+.menufloat img {
+    margin: auto;
+    margin-left: 5px;
+}
+.menufloat img:hover{
+    width: 55px;
+}
+.menufloat div {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#whats {
+    visibility: hidden;
+    height: 20px;
+    width: 100px;
+    background-color: rgb(29, 29, 29);
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+}
+#insta {
+    visibility: hidden; 
+    height: 20px;
+    width: 100px;
+    background-color: rgb(29, 29, 29);
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+}
+#gmail {
+    visibility: hidden; 
+    height: 20px;
+    width: 100px;
+    background-color: rgb(29, 29, 29);
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(22, 22, 22);
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    padding: 1rem;
+}
+ /* ---------------------------- catering ---------------------------- */
+#content {
+    width: 1200px;
+    margin: auto;
+}
+#content article {
+    font-size: 1.3rem;
+    height: 400px;
+    background-color: rgb(29, 29, 29);
+    margin: 1rem 0 1rem 0;
+    color: white;
+    border: 1px black solid;
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+#content img {
+    float: left;
+    height: 400px;
+    margin-right: 10px;
+    border-radius: 0.5rem;
+}
+ /* ---------------------------- nnnnnnn ---------------------------- */
