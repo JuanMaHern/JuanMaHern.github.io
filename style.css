@@ -4,11 +4,16 @@ body {
 }
 
 #top {
-    height: 100px;
+    width: auto;
+    min-height: 100px;
     border: 1px black solid;
     border-radius: 0.5rem;
-    background-image: url("Img/firebackground.png");
+    background-image: url("Img/fire.jpg");
     background-position: center;
+    background-position-y: 60% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .button {
@@ -96,7 +101,7 @@ footer {
 }
  /* ---------------------------- catering ---------------------------- */
 #content {
-    width: 1200px;
+    width: 95%;
     margin: auto;
 }
 #content article {
