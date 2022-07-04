@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$( document ).ready(function() {
 
     $('nav ul li > a:not(:only-child)').click(function(e){
         $(this).siblings('.nav-submenu').toggle();
@@ -13,5 +13,5 @@ $(document).ready(function() {
     $('#nav-button').click(function(){
         $('nav ul').toggle();
         $('#nav-button').toggleClass("activo");
-    });
+    })
 });

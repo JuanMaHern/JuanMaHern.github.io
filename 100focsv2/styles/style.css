@@ -1,10 +1,16 @@
 body {
      background-image: url("../img/Backgound.jpg"); 
 }
+.navigation {
+    height: 70px;
+    background: rgba(172, 172, 172, 0.3);
+}
 nav {
     float: left;
-    background: rgba(172, 172, 172, 0.3);
     width: 100%;
+}
+.nav-menu {
+    display: block;
 }
 nav ul {
     list-style: none;
@@ -48,22 +54,13 @@ nav ul li a:not(:only-child):after{
     position: absolute;
     top: 0;
     right: 0;
-    background:rgba(172, 172, 172, 0.3) ;
+    background: #001628 ;
     height: 70px;
     width: 100%;
 }
 @media screen and(max-width: 979px) {
     .nav-movil{
         display: block;
-    }
-    .nav-menu {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 980px){
-    .nav-menu{
-        display: block !important;
     }
     .nav-menu {
         display: none;
@@ -83,6 +80,12 @@ nav ul li a:not(:only-child):after{
         position: static;
     }
 }
+
+@media screen and (min-width: 980px){
+    .nav-menu{
+        display: block !important;
+    }
+}
 /* -----------------------nav-button----------------------- */
 #nav-button {
     position: absolute;
@@ -92,12 +95,11 @@ nav ul li a:not(:only-child):after{
     width: 20px;
     height: 10px;
     padding: 5px 15px 15px 0;
-    background: #fff;
     z-index: 1;
 }
 #nav-button span, #nav-button span::after, #nav-button span::before {
     transition: all 500ms ease-in-out;
-    border-radius: 1rem;
+    border-radius: 1px;
     height: 5px;
     width: 40px;
     position: absolute;
@@ -114,7 +116,7 @@ nav ul li a:not(:only-child):after{
 #nav-button.active span {
     background-color: transparent;
 }
-#nav-button.active span::after, #nav-button.active span::before{
+#nav-button.active span::before, #nav-button.active span::after{
     top: 0;
 }
 #nav-button.active span:after {
