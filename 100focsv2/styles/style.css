@@ -1,0 +1,126 @@
+body {
+     background-image: url("../img/Backgound.jpg"); 
+}
+nav {
+    float: left;
+    background: rgba(172, 172, 172, 0.3);
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: rgba(172, 172, 172, 0.3);
+}
+nav ul li {
+    float: left;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    color: #72e0d1;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background: #2581dc;
+    color: #ffffff;
+}
+nav ul li a:not(:only-child):after{
+    padding-left: 5px;
+    content: "-";
+}
+.nav-submenu {
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: auto;
+    display: none;
+}
+.nav-submenu li {
+    width: 100%;
+    white-space: nowrap;
+}
+.nav-movil {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:rgba(172, 172, 172, 0.3) ;
+    height: 70px;
+    width: 100%;
+}
+@media screen and(max-width: 979px) {
+    .nav-movil{
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .nav-menu{
+        display: block !important;
+    }
+    .nav-menu {
+        display: none;
+        margin-top: 70px;
+    }
+    .nav-menu li {
+        float: none;
+    }
+    .nav-menu li a{
+        padding: 20px;
+        line-height: 20px;
+    }
+    .nav-menu li ul li a {
+        padding-left: 30px;
+    }
+    .nav-submenu{
+        position: static;
+    }
+}
+/* -----------------------nav-button----------------------- */
+#nav-button {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    cursor: pointer;
+    width: 20px;
+    height: 10px;
+    padding: 5px 15px 15px 0;
+    background: #fff;
+    z-index: 1;
+}
+#nav-button span, #nav-button span::after, #nav-button span::before {
+    transition: all 500ms ease-in-out;
+    border-radius: 1rem;
+    height: 5px;
+    width: 40px;
+    position: absolute;
+    display: block;
+    content: "";
+    background: #fff;
+}
+#nav-button span:before {
+    top: -10px;
+}
+#nav-button span::after {
+    bottom: -10px;
+}
+#nav-button.active span {
+    background-color: transparent;
+}
+#nav-button.active span::after, #nav-button.active span::before{
+    top: 0;
+}
+#nav-button.active span:after {
+    transform: rotate(-45deg);
+}
+#nav-button.active span:before {
+    transform: rotate(45deg);
+}
+ /*-----------------------nav-button----------------------- */
