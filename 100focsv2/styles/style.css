@@ -127,11 +127,11 @@ body {
   #nav-boton {
     position: absolute;
     left: 20px;
-    top: 90px;
+    top: 60px;
     cursor: pointer;
-    width:60px;
-    height: 20px;
-    padding: 5px 15px 15px 0px;
+    width:75px;
+    height: 40px;
+    padding: 15px 5px 0 0px;
     z-index:1;
   }
   
@@ -140,8 +140,8 @@ body {
   #nav-boton span:before {
     transition: all 500ms ease-in-out;
     border-radius: 1px;
-    height: 7px;
-    width: 56px;
+    height: 10px;
+    width: 80px;
     position: absolute;
     display: block;
     content: "";
@@ -149,10 +149,10 @@ body {
   }
   
   #nav-boton span:before {
-    top: -12px;
+    top: -20px;
   }
   #nav-boton span:after {
-    bottom: -12px;
+    bottom: -20px;
   }
   
   #nav-boton.activo span {
