@@ -1,5 +1,6 @@
 body {
      background-image: url("../img/Backgound.jpg"); 
+     margin: 0;
 }
 
 .navigation {
@@ -118,8 +119,8 @@ body {
   #nav-boton span:before {
     transition: all 500ms ease-in-out;
     border-radius: 1px;
-    height: 5px;
-    width: 40px;
+    height: 7px;
+    width: 56px;
     position: absolute;
     display: block;
     content: "";
@@ -127,10 +128,10 @@ body {
   }
   
   #nav-boton span:before {
-    top: -10px;
+    top: -12px;
   }
   #nav-boton span:after {
-    bottom: -10px;
+    bottom: -12px;
   }
   
   #nav-boton.activo span {
