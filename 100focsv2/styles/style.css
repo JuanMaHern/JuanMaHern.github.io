@@ -96,6 +96,7 @@ body {
       width: 50%;
       position: absolute;
       border: 1px black solid;
+      background-image: url(../img/Backgound.jpg);
     }
     
     .nav-menu li {
@@ -104,6 +105,7 @@ body {
     .nav-menu li a {
       padding: 20px;
       line-height: 40px;
+      color: white;
     }
     .nav-menu li ul li a {
       padding-left: 30px;
@@ -162,23 +164,44 @@ body {
     transform: rotate(45deg);
   }
 /* -------------------- Top end -------------------- */
+/* .content {
+  padding: 5px;
+} */
+
 #article {
   width: auto;
-  height: 400px;
+  height: 300px;
   border-radius: 0.5rem;
   background: rgba(172, 172, 172, 0.2);
+  margin: auto;
   margin-top: 5px;
   padding: 5px;
-  overflow: hidden;
 }
 #article img {
   width: auto;
-  height: 400px;
+  height: 300px;
   border-radius: 0.5rem;
   float: left;
-  margin-right: 5px;
   border: 1px black solid;
+  margin-right: 5px;
 }
-#article h4, #article p {
+#article h4 {
+  text-align: center;
+  margin: 2px 0 2px 0;
+}
+#article div {
+  height: 270px;
+  overflow: hidden;
+}
+#article a{
+  font-size: 1.5rem;
+  margin-right: 10px;
+  float: right;
+}
+/* #predesc {
+  margin: 2px;
+  text-align: justify;
+} */
+/* #article h4, #article p {
   margin: 10px auto 10px auto;
-}
+} */
