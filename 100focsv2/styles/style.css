@@ -4,6 +4,10 @@ body {
      padding: 5px;
      font-size: 1.5rem;
      height: 100%;
+     color: white;
+     display: grid;
+     min-height: 100vh;
+     grid-template-rows: auto 1fr auto;
 }
 /* -------------------- Top start -------------------- */
 .top {
@@ -85,7 +89,7 @@ body {
     height: 140px;
     width: 100%;
   }
-  @media screen and (max-width: 1079px) {
+  @media screen and (max-width: 999px) {
     .top{
       height: 140px;
     }
@@ -130,7 +134,7 @@ body {
       position: static;
     }
   }
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1000px) {
     .nav-menu {
       display: block !important;
       margin-top: 0;
@@ -244,7 +248,7 @@ body {
 
 #bottom {
   width: auto;
-  height: 70px;
+  height: 50px;
   background-image: url("../img/fire.jpg");
   background-position: center;
   background-size: cover;
@@ -256,8 +260,10 @@ body {
 #bottom p {
   color: white;
   margin-top: 2px;
+  font-size: 1rem;
 }
 #bottom img {
+  width: 30px;
   margin: 0 20px 0 20px;
 }
 #bottom div {
