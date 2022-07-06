@@ -14,5 +14,5 @@ $( document ).ready(function() {
       $('nav ul').toggle()
       $('#nav-boton').toggleClass("activo");
     })
-  
+
   });

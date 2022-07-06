@@ -2,7 +2,8 @@ body {
      background-image: url("../img/Backgound.jpg"); 
      margin: 0;
      padding: 5px;
-     font-size: 2rem;
+     font-size: 1.5rem;
+     height: 100%;
 }
 /* -------------------- Top start -------------------- */
 .top {
@@ -12,11 +13,17 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: 0.5rem;
-  z-index: 1;
+}
+.top img {
+  position: absolute;
+  right: 30px;
+  height: 70px;
 }
   .navigation {
     height: 70px;
-    background: rgba(172, 172, 172, 0.2);
+    background-image: url("../img/fire.jpg");
+    background-position: center;
+    background-size: cover;
     border-radius: 0.5rem;
   }
   nav {
@@ -39,10 +46,11 @@ body {
     position: relative;
   }
   nav ul li a {
+    font-size: 2rem;
     display: block;
     padding: 0 20px;
     line-height: 70px;
-    color: #000000;
+    color: white;
     text-decoration: none;
     border-radius: 0.5rem;
   }
@@ -62,6 +70,7 @@ body {
     width: auto;
     display: none;
     border-radius: 0.5rem;
+    background-image: url(../img/Backgound.jpg);
   }
   .nav-submenu li {
      width: 100%;
@@ -80,11 +89,17 @@ body {
     .top{
       height: 140px;
     }
+    .top img {
+      position: absolute;
+      right: 40%;
+      height: 130px;
+    }
     .navigation{
+      background: transparent;
       height: 140px;
     }
     body{
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     .nav-movil {
       display: block;
@@ -92,7 +107,7 @@ body {
   
     .nav-menu {
       display: none;
-      margin-top: 140px;
+      margin-top: 140;
       width: 50%;
       position: absolute;
       border: 1px black solid;
@@ -119,7 +134,7 @@ body {
     .nav-menu {
       display: block !important;
       margin-top: 0;
-      position: static;
+      /* position: static; */
     }  
   }
   #nav-boton {
@@ -163,21 +178,46 @@ body {
   #nav-boton.activo span:before {
     transform: rotate(45deg);
   }
-/* -------------------- Top end -------------------- */
-/* .content {
+/* -------------------- Top end - Content start -------------------- */
+.content {
+  margin: 10px;
+}
+#contenthead {
+  width: auto;
+  height: 50px;
+  border-radius: 0.5rem;
+  background: rgba(172, 172, 172, 0.2);
+  margin: auto;
   padding: 5px;
-} */
+  margin-bottom: 10px;
+  text-align: center;
+}
+#contenthead h3 {
+  height: 50px;
+  width: auto;
+  margin: auto;
+  margin-top: 10px;
+}
 
-#article {
+#article{
   width: auto;
   height: 300px;
   border-radius: 0.5rem;
   background: rgba(172, 172, 172, 0.2);
   margin: auto;
-  margin-top: 5px;
   padding: 5px;
+  margin-bottom: 10px;
 }
-#article img {
+#articlei {
+  width: auto;
+  height: 1000px;
+  border-radius: 0.5rem;
+  background: rgba(172, 172, 172, 0.2);
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#article img{
   width: auto;
   height: 300px;
   border-radius: 0.5rem;
@@ -185,23 +225,59 @@ body {
   border: 1px black solid;
   margin-right: 5px;
 }
-#article h4 {
+#article h4{
   text-align: center;
   margin: 2px 0 2px 0;
 }
-#article div {
+#article div{
   height: 270px;
   overflow: hidden;
 }
 #article a{
+  cursor: pointer;
+  color: rgb(73, 223, 223);
   font-size: 1.5rem;
   margin-right: 10px;
   float: right;
 }
-/* #predesc {
-  margin: 2px;
-  text-align: justify;
-} */
-/* #article h4, #article p {
-  margin: 10px auto 10px auto;
-} */
+/* -------------------- Content end - Bottom start -------------------- */
+
+#bottom {
+  width: auto;
+  height: 70px;
+  background-image: url("../img/fire.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.5rem;
+  margin-top: auto;
+  bottom: 0px;
+  padding: 10px;
+}
+#bottom p {
+  color: white;
+  margin-top: 2px;
+}
+#bottom img {
+  margin: 0 20px 0 20px;
+}
+#bottom div {
+  text-align: center;
+}
+#wp {
+  left: 20px;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+}
+#ig {
+  left: 140px;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+}
+#gm {
+  left: 260px;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+}
