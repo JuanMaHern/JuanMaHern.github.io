@@ -249,13 +249,11 @@ body {
 #bottom {
   width: auto;
   height: 50px;
-  background-image: url("../img/fire.jpg");
-  background-position: center;
-  background-size: cover;
   border-radius: 0.5rem;
   margin-top: auto;
   bottom: 0px;
   padding: 10px;
+  text-align: center;
 }
 #bottom p {
   color: white;
@@ -268,22 +266,9 @@ body {
 }
 #bottom div {
   text-align: center;
+  display: inline-block;
 }
-#wp {
-  left: 20px;
-  width: 100px;
-  height: 80px;
-  position: absolute;
+#bottom a {
+  text-decoration: none;
 }
-#ig {
-  left: 140px;
-  width: 100px;
-  height: 80px;
-  position: absolute;
-}
-#gm {
-  left: 260px;
-  width: 100px;
-  height: 80px;
-  position: absolute;
-}
+/* -------------------- Bottom end -------------------- */
